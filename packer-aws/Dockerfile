@@ -22,7 +22,7 @@ RUN pip install --upgrade pip
 RUN pip install awscli
 RUN curl https://releases.hashicorp.com/packer/${packer_version}/packer_${packer_version}_linux_amd64.zip -o packer_${packer_version}_linux_amd64.zip
 RUN unzip packer_${packer_version}_linux_amd64.zip -d /usr/local/bin
-RUN curl https://releases.hashicorp.com/terraform/${terraform_version}/terraform_${terraform_version}_linux_amd64.zip -o terraform_${packer_version}_linux_amd64.zip
+RUN curl https://releases.hashicorp.com/terraform/${terraform_version}/terraform_${terraform_version}_linux_amd64.zip -o terraform_${terraform_version}_linux_amd64.zip
 RUN unzip terraform_${terraform_version}_linux_amd64.zip -d /usr/local/bin
 RUN mkdir -p /opt/workspace
 RUN rm /var/cache/apk/*
