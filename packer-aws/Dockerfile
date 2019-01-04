@@ -1,5 +1,5 @@
 FROM alpine:3.7
-MAINTAINER marcelo correia <marcelo@correia.io>
+MAINTAINER ha nguyen <thaiha@gmail.com>
 ARG packer_version="1.2.4"
 RUN apk update
 RUN apk upgrade
